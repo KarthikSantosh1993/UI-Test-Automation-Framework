@@ -61,11 +61,12 @@ jobs:
 
     - name: Copy Reports to gh-pages Folder
       if: always()
-
       run: |
-        mkdir -p public/extent-reports
-        cp -Rf report.html public/index.html
-        cp -Rf screenshots/  public/extent-reports/screenshots/
+        mkdir -p public
+        # Rename report.html to index.html so it becomes the homepage
+        cp -Rf report.html public/index.html || true
+        cp -Rf screenshots/ public/screenshots/ || true
+        # Tell GitHub NOT to use Jekyll (fixes 404s on folders)
         touch public/.nojekyll
 
     - name: Deploy to Github Pages
