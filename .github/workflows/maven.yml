@@ -74,6 +74,7 @@ jobs:
         folder: public/extent-reports
         token: ${{ secrets.PAT_GITHUB_PAGES }}
         clean: true
+        
     
 
     
