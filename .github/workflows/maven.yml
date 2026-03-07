@@ -64,8 +64,8 @@ jobs:
 
       run: |
         mkdir -p public/extent-reports
-        cp -R report.html  public/extent-reports/
-        cp -R screenshots/  public/extent-reports/screenshots/
+        cp -Rf report.html public/index.html
+        cp -Rf screenshots/  public/extent-reports/screenshots/
         touch public/.nojekyll
 
     - name: Deploy to Github Pages
