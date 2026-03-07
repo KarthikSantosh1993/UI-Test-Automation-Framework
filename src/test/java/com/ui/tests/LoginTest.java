@@ -17,19 +17,19 @@ public class LoginTest extends TestBase{
 //				"Karthik Duruvasula");
 //	}
 //
-//	@Test(description = "Login test with CSV Test data", groups = {
-//			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataprovider.class, dataProvider = "LoginTestCSVDataProvider")
-//	public void loginCSVTest(User user) {
-//		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
-//				"Karthik Duruvasula");
-//	}
-
-	@Test(description = "Login test with Excel Test data", groups = {
-			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataprovider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
-	public void loginExcelTest(User user) {
+	@Test(description = "Login test with CSV Test data", groups = {
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataprovider.class, dataProvider = "LoginTestCSVDataProvider")
+	public void loginCSVTest(User user) {
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				"Karthik Duruvasula");
 	}
+
+//	@Test(description = "Login test with Excel Test data", groups = {
+//			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataprovider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+//	public void loginExcelTest(User user) {
+//		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+//				"Karthik Duruvasula");
+//	}
 	
 	
 	
