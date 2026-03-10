@@ -26,14 +26,12 @@ public final class HomePage extends BrowserUtility {
 		super(lambdaDriver);
 		goToWebsite(JSONUtility.readJSON(QA).getUrl());
 		maximizeWindow();
-		// TODO Auto-generated constructor stub
 	}
 
 	public LoginPage goToLoginPage() {
 		log.info("Trying to perform click to go to Login page");
 		clickOn(SIGN_IN_LINK_LOCATOR);
-		LoginPage loginPage = new LoginPage(getDriver());
-		return loginPage;
+		return new LoginPage(getDriver());
 	}
 	
 	public void closeBrowser() {
