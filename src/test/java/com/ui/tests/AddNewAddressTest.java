@@ -28,7 +28,7 @@ public class AddNewAddressTest extends TestBase {
 	}
 
 	@AfterMethod(description = "delete account after account creation")
-	public void tearDown() {
+	public void deleteAccount() {
 		if (addressPage != null) {
 			addressPage.deleteAccount();
 		}

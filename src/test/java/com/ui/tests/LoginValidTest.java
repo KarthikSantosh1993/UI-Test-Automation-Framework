@@ -10,9 +10,9 @@ import com.ui.pojo.User;
 @Listeners(com.ui.listeners.TestListener.class)
 public class LoginValidTest extends TestBase {
 
-	@Test(description = "Verify if valid user is able to login", groups = { "e2e",
+	@Test(description = "Login test with JSON Test data", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataprovider.class, dataProvider = "LoginDataProvider")
-	public void loginTest(User user) {
+	public void loginJSONTest(User user) {
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				"Karthik Duruvasula");
 	}
@@ -30,5 +30,4 @@ public class LoginValidTest extends TestBase {
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				"Karthik Duruvasula");
 	}
-
 }

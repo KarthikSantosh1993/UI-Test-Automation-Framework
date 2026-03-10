@@ -16,7 +16,7 @@ public class LoginInValidTest extends TestBase {
 	@Test(description = "Verify if proper error message is shown for invalid credentials when user enter invalid credentails ", groups = {
 			"e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataprovider.class, dataProvider = "LoginDataProvider")
-	public void loginTest(User user) {
+	public void loginInvalidCredentialsTest(User user) {
 		assertEquals(homePage.goToLoginPage()
 				.doLoginWithInvalidCredentials(INVALID_EMAIL_ADDRESS, INVALID_PASSWORD).getErrorMessage(),
 				"Authentication failed.");
