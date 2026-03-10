@@ -4,10 +4,12 @@ import static com.constants.Size.L;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ui.pages.SearchResultPage;
 
+@Listeners(com.ui.listeners.TestListener.class)
 public class ProductCheckoutTest extends TestBase {
 	private static final String SEARCH_TERM = "Printed Summer Dress";
 	private static final String EXPECTED_PAYMENT_WARNING_MESSAGE = "No payment modules have been installed.";

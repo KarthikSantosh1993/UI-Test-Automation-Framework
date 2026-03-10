@@ -1,10 +1,9 @@
-package com.ui.tests;
+package com.ui.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.constants.Size;
-import com.ui.pages.ShoppingCartPage;
 import com.utility.BrowserUtility;
 
 public class ProductDetailPage extends BrowserUtility{
