@@ -5,7 +5,6 @@
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
-
 name: UI Test Automation Workflow
 
 on:
@@ -18,7 +17,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -61,11 +59,11 @@ jobs:
 
     - name: Copy Reports to gh-pages Folder
       if: always()
-
       run: |
         mkdir -p public/extent-reports
         cp -R report.html  public/extent-reports/
         cp -R screenshots/  public/extent-reports/screenshots/
+        touch public/.nojekyll
 
     - name: Deploy to Github Pages
       if: always()
@@ -74,12 +72,3 @@ jobs:
         folder: public/extent-reports
         token: ${{ secrets.PAT_GITHUB_PAGES }}
         clean: true
-    
-
-    
-    
-
-
-
-
-      
