@@ -10,7 +10,7 @@
 - [Email: ](krthiksantosh@gmail.com) krthiksantosh@gmail.com
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/KarthikSantosh1993)
+[![GITHUB Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/KarthikSantosh1993)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/karthik-duruvasula-b6972974)
 
@@ -119,3 +119,4 @@ Automation Framework is integrated with github actions.
 
 The Reports will be archived in gh-pages branch 
 You can view HTML reports at: https://karthiksantosh1993.github.io/UI-Test-Automation-Framework/
+
